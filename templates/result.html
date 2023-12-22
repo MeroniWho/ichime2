@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+    <div>名前：{{title}}</div>
+    <div>評価：{{rating}}</div>
+    <div>評価人数：{{ratingcount}}</div>
+    <img src= "{{ img_path }}" style="margin: 20px; vertical-align: bottom; width: 200px;">
+    <a href="/">他の本もミル？</a>
+</center>
+{% endblock %}

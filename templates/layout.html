@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <img src="{{ url_for('static', filename='images/ichimelogo.png') }}" alt="一目"  class="top-left-image">
+        <title>一目</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: Meiryo, sans-serif;
+                text-align: center;
+                padding-top: 50px;
+            }
+    </style>
+    </head>
+    <body>
+        <h1>一目</h1>
+        <h2>本の情報を、一目で</h2>
+        <!-- <div class="button-container">
+            <button class="site-button" id="photo-button">写真</button>
+            <button class="site-button" id="album-button">アルバム</button>
+            <input type="file" id="file-input" style="display: none;">
+        </div>
+        <video id="video-stream" width="640" height="480" autoplay style="display: none;"></video>
+        <script>
+            document.getElementById('album-button').addEventListener('click', function() {
+                document.getElementById('file-input').click();
+            });
+        </script>
+        <script>
+            document.getElementById('photo-button').addEventListener('click', function() {
+                const video = document.getElementById('video-stream');
+                video.style.display = 'block'; // 显示视频元素
+    
+                if (navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices.getUserMedia({ video: true }) // 请求摄像头权限
+                        .then(function(stream) {
+                            video.srcObject = stream; // 将摄像头视频流设置到video元素上
+                        })
+                        .catch(function(error) {
+                            console.log("カメラ取得エラー：", error);
+                        });
+                } else {
+                    alert('ブラウザはカメラへのアクセスできません');
+                }
+            }); -->
+        <!-- </script>   -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-dark" href="#">複数の本の評価をもらうアプリ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                </div>
+            </div>
+        </nav>
+        {% block content %}{% endblock %}  
+    </body>
+</html>

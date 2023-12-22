@@ -1,0 +1,44 @@
+h1 {
+    color: rgb(105, 105, 110);
+}
+.top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100px; /* 根据需要调整图片大小 */
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.site-button {
+    background-color: #3295b4; /* 按钮背景颜色 */
+    color: white; /* 文字颜色 */
+    padding: 20px 40px; /* 内边距：垂直和水平 */
+    margin: 10px; /* 外边距 */
+    border: none; /* 无边框 */
+    border-radius: 4px; /* 圆角边框 */
+    cursor: pointer; /* 鼠标悬停时的光标形状 */
+}
+
+.site-button:hover {
+    background-color: #216a81; /* 鼠标悬停时的背景颜色 */
+}
+
+body {
+    background-image: url('Wanderer Above the Mist.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 确保图片覆盖整个页面 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    background-attachment: fixed; /* 让背景图片固定不动，而不是随着页面滚动 */
+}
+
+footer {
+    text-align: center;
+    padding: 0.1px 0;
+    background-color: #c7c7c7;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
