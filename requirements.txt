@@ -8,5 +8,5 @@ google-auth-oauthlib==1.1.0
 google-api-core==2.14.0
 google-auth==2.23.4
 Pillow==9.4.0
-opencv-python==4.8.0.76
+opencv-python--headless==4.8.0.76
 Werkzeug==2.3.7
